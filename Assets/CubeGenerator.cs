@@ -21,7 +21,7 @@ public class CubeGenerator : MonoBehaviour
     private float spaceX = 0.4f;
 
 
-    private int maxBlockNum = 4;
+    private int maxBlockNum = 3;
     
     
     // Start is called before the first frame update
@@ -46,7 +46,7 @@ public class CubeGenerator : MonoBehaviour
             {
 
                 GameObject go = Instantiate(cubePrefab);
-                go.transform.position = new Vector2(this.genPosX, this.offsetY + i * this.spaceY);
+                go.transform.position = new Vector2(this.genPosX+Random.Range(-0.5f,+1), this.offsetY + i * this.spaceY);
 
             }
 

@@ -11,7 +11,7 @@ public class CubeController : MonoBehaviour
 
     AudioSource audioSource;
 
-    public AudioClip block;
+    public AudioClip MoaiBgm2;
 
     // Start is called before the first frame update
     void Start()
@@ -41,7 +41,7 @@ public class CubeController : MonoBehaviour
         if (other.gameObject.tag == "CubeTag" || other.gameObject.tag == "GroundTag")
         {
 
-            audioSource.PlayOneShot(block);
+            audioSource.PlayOneShot(MoaiBgm2);
 
         }
 
